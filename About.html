@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | K-Eleventh Global</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #004aad;
+            --secondary: #ff7d00;
+        }
+        .about-hero {
+            background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)), url('about-hero.jpg') no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 4px solid white;
+        }
+        .team-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .value-card {
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="K-Eleventh Global" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="appointment.html">Book Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero d-flex align-items-center">
+        <div class="container text-white text-center">
+            <h1 class="display-3 fw-bold mb-4">About K-Eleventh Global</h1>
+            <p class="lead">Delivering global standard automotive services since 1998</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3">OUR STORY</span>
+                    <h2 class="mb-4">From Local Workshop to Global Network</h2>
+                    <p class="lead">K-Eleventh Global began as a small auto repair shop in Lagos with a vision to bring world-class automotive service to Africa.</p>
+                    <p>Founded by Chief Osakwe Oredia in 1998, we've grown from a single-bay workshop to an international network of service centers across West Africa, Europe, and North America.</p>
+                    <p>Our name reflects our founder's commitment to the 11 key principles of automotive excellence that guide every aspect of our business.</p>
+                    <a href="contact.html" class="btn btn-primary mt-3">Contact Our Team</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg">
+                        <img src="founder.jpg" alt="Our Founder" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Chief Osakwe Oradia</h5>
+                            <p class="text-muted">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Timeline -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3">OUR JOURNEY</span>
+                    <h2 class="mb-3">Milestones in Excellence</h2>
+                    <p class="lead">Key moments in our growth and development</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>1998</h4>
+                            <p>Founded as a small auto repair shop in Lagos with 2 technicians</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2005</h4>
+                            <p>Opened first full-service facility with 10 service bays</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2010</h4>
+                            <p>Launched international expansion with first center in Accra, Ghana</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2015</h4>
+                            <p>Established European headquarters in London, UK</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2018</h4>
+                            <p>Celebrated 20 years with 25 service centers across 3 continents</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2023</h4>
+                            <p>Opened North American technical center in Houston, Texas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3">OUR VALUES</span>
+                    <h2 class="mb-3">The K-Eleventh Principles</h2>
+                    <p class="lead">The 11 core values that guide our business</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card h-100">
+                        <h4 class="mb-3">1. Technical Excellence</h4>
+                        <p>We maintain the highest standards of technical proficiency through continuous training and certification of our team.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card h-100">
+                        <h4 class="mb-3">2. Customer Focus</h4>
+                        <p>Every decision is made with our customers' best interests at heart, ensuring complete satisfaction.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card h-100">
+                        <h4 class="mb-3">3. Integrity</h4>
+                        <p>We operate with complete transparency and honesty in all our dealings.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card h-100">
+                        <h4 class="mb-3">4. Innovation</h4>
+                        <p>We embrace new technologies and methods to deliver better service.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card h-100">
+                        <h4 class="mb-3">5. Quality</h4>
+                        <p>Only the highest quality parts and materials are used in our repairs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="value-card h-100">
+                        <h4 class="mb-3">6. Reliability</h4>
+                        <p>We stand behind our work with comprehensive warranties.</p>
+                    </div>
+                </div>
+                <!-- Additional principles would be listed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3">OUR TEAM</span>
+                    <h2 class="mb-3">Global Leadership</h2>
+                    <p class="lead">Meet our executive leadership team</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-card h-100">
+                        <img src="team1.jpg" class="card-img-top" alt="CEO">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Chief Kolawole Eleventh</h5>
+                            <p class="text-muted mb-3">Founder & CEO</p>
+                            <p class="card-text">30+ years in automotive engineering and business leadership.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-card h-100">
+                        <img src="team2.jpg" class="card-img-top" alt="COO">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Amina Mohammed</h5>
+                            <p class="text-muted mb-3">Chief Operations Officer</p>
+                            <p class="card-text">Oversees all service operations across our global network.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-card h-100">
+                        <img src="team3.jpg" class="card-img-top" alt="CTO">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Dr. Emeka Okonkwo</h5>
+                            <p class="text-muted mb-3">Chief Technical Officer</p>
+                            <p class="card-text">Leads our technical innovation and training programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-card h-100">
+                        <img src="team4.jpg" class="card-img-top" alt="CFO">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Fatima Bello</h5>
+                            <p class="text-muted mb-3">Chief Financial Officer</p>
+                            <p class="card-text">Manages our global financial strategy and growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3">GLOBAL REACH</span>
+                    <h2 class="mb-3">Worldwide Service Network</h2>
+                    <p class="lead">Serving clients across multiple continents</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="world-map.jpg" alt="Global Presence" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="row mt-4 g-4 text-center">
+                <div class="col-md-4">
+                    <h3 class="text-primary">25+</h3>
+                    <p class="mb-0">Service Centers</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-primary">12</h3>
+                    <p class="mb-0">Countries</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-primary">300+</h3>
+                    <p class="mb-0">Certified Technicians</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="mb-3">Experience the K-Eleventh Difference</h2>
+                    <p class="lead mb-0">Join thousands of satisfied customers who trust us with their vehicles.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="appointment.html" class="btn btn-light btn-lg px-4">Book Service</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg px-4 ms-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as homepage) -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="logo-white.png" alt="K-Eleventh Global" height="50" class="mb-3">
+                    <p>K-Eleventh Global Limited delivers international standard automotive maintenance and repair services across Africa and beyond.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">

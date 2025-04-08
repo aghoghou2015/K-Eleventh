@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | K-Eleventh Global</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #004aad;
+            --secondary: #ff7d00;
+        }
+        .service-hero {
+            background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)), url('service-hero.jpg') no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+        .nav-pills .nav-link.active {
+            background-color: var(--primary);
+        }
+        .nav-pills .nav-link {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="K-Eleventh Global" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="appointment.html">Book Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero d-flex align-items-center">
+        <div class="container text-white text-center">
+            <h1 class="display-3 fw-bold mb-4">Our Services</h1>
+            <p class="lead">Global standard automotive maintenance solutions</p>
+        </div>
+    </section>
+
+    <!-- Services Navigation -->
+    <section class="py-4 bg-light sticky-top" style="top: 72px; z-index: 1020;">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center flex-wrap">
+                <li class="nav-item mx-1 mb-2">
+                    <a class="nav-link active" href="#engine">Engine Services</a>
+                </li>
+                <li class="nav-item mx-1 mb-2">
+                    <a class="nav-link" href="#transmission">Transmission</a>
+                </li>
+                <li class="nav-item mx-1 mb-2">
+                    <a class="nav-link" href="#electrical">Electrical</a>
+                </li>
+                <li class="nav-item mx-1 mb-2">
+                    <a class="nav-link" href="#brakes">Brakes</a>
+                </li>
+                <li class="nav-item mx-1 mb-2">
+                    <a class="nav-link" href="#maintenance">Maintenance</a>
+                </li>
+                <li class="nav-item mx-1 mb-2">
+                    <a class="nav-link" href="#diagnostics">Diagnostics</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Engine Services -->
+    <section id="engine" class="py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3">ENGINE SERVICES</span>
+                    <h2 class="mb-4">Precision Engine Repair & Maintenance</h2>
+                    <p class="lead">Our certified technicians deliver world-class engine services using OEM-approved procedures and equipment.</p>
+                    <p>From routine tune-ups to complete overhauls, we maintain all engine types including gasoline, diesel, hybrid, and electric vehicle systems.</p>
+                    <a href="appointment.html" class="btn btn-primary mt-3">Schedule Engine Service</a>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="engine-service.jpg" alt="Engine Service" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-cog service-icon mb-3"></i>
+                            <h4 class="card-title">Engine Diagnostics</h4>
+                            <p class="card-text">Computerized analysis to identify issues before they become major problems.</p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Full system scan</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Performance analysis</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Error code reading</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-tools service-icon mb-3"></i>
+                            <h4 class="card-title">Engine Repair</h4>
+                            <p class="card-text">Comprehensive repair services for all engine components and systems.</p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Cylinder head work</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Timing belt replacement</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Gasket replacements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-oil-can service-icon mb-3"></i>
+                            <h4 class="card-title">Oil Services</h4>
+                            <p class="card-text">Premium oil change services with quality filters and lubricants.</p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Synthetic oil changes</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Oil system flush</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Filter replacement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transmission Services -->
+    <section id="transmission" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <span class="badge bg-primary bg-opacity-10 text-primary mb-3">TRANSMISSION SERVICES</span>
+                    <h2 class="mb-4">Expert Transmission Solutions</h2>
+                    <p class="lead">Professional transmission services to keep your vehicle shifting smoothly.</p>
+                    <p>Our transmission specialists handle everything from fluid changes to complete rebuilds for manual, automatic, and CVT transmissions.</p>
+                    <a href="appointment.html" class="btn btn-primary mt-3">Schedule Transmission Service</a>
+                </div>
+                <div class="col-lg-6 order-lg-1 mt-4 mt-lg-0">
+                    <img src="transmission-service.jpg" alt="Transmission Service" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-exchange-alt service-icon mb-3"></i>
+                            <h4 class="card-title">Transmission Repair</h4>
+                            <p class="card-text">Comprehensive repair services for all transmission types.</p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Clutch replacement</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Gearbox overhaul</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Solenoid replacement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-tint service-icon mb-3"></i>
+                            <h4 class="card-title">Fluid Services</h4>
+                            <p class="card-text">Complete transmission fluid maintenance.</p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Fluid change</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> System flush</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Filter replacement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-search service-icon mb-3"></i>
+                            <h4 class="card-title">Diagnostics</h4>
+                            <p class="card-text">Advanced transmission diagnostics.</p>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Computer analysis</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Road testing</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Performance evaluation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other service sections would follow the same pattern -->
+    <!-- Electrical, Brakes, Maintenance, Diagnostics sections would be here -->
+
+    <!-- Warranty Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Service Warranty</h2>
+            <p class="lead mb-5">All our services come with comprehensive warranty coverage for your peace of mind.</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 bg-white text-dark">
+                        <div class="card-body p-4">
+                            <h3 class="text-primary">12 Months</h3>
+                            <p class="mb-0">On all major repairs and replacements</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 bg-white text-dark">
+                        <div class="card-body p-4">
+                            <h3 class="text-primary">6 Months</h3>
+                            <p class="mb-0">On standard maintenance services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 bg-white text-dark">
+                        <div class="card-body p-4">
+                            <h3 class="text-primary">Nationwide</h3>
+                            <p class="mb-0">Coverage at all our service centers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="mb-3">Ready to Experience Global Standard Service?</h2>
+                    <p class="lead mb-0">Book your appointment today with our certified technicians.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="appointment.html" class="btn btn-primary btn-lg px-4">Book Now</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg px-4 ms-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as homepage) -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="logo-white.png" alt="K-Eleventh Global" height="50" class="mb-3">
+                    <p>K-Eleventh Global Limited delivers international standard automotive maintenance and repair services across Africa and beyond.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#engine" class="text-white-50">Engine Repair</a></li>
+                        <li class="mb-2"><a href="services.html#transmission" class="text-white-50">Transmission</a></li>
+                        <li class="mb-2"><a href="services.html#electrical" class="text-white-50">Electrical Systems</a></li>
+                        <li class="mb-2"><a href="services.html#brakes" class="text-white-50">Brake Service</a></li>
+                        <li class="mb-2"><a href="services.html#maintenance" class="text-white-50">Preventive Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                            <span>12 Industrial Avenue, Lagos, Nigeria</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-phone-alt me-3 mt-1"></i>
+                            <span>+234 812 345 6789</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-envelope me-3 mt-1"></i>
+                            <span>info@keleventh.com</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-clock me-3 mt-1"></i>
+                            <span>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 K-Eleventh Global Limited. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="privacy.html" class="text-white-50 me-3">Privacy Policy</a>
+                        <a href="terms.html" class="text-white-50">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for service navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
