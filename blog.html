@@ -1,1 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | K-Eleventh Global</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #004aad;
+            --secondary: #ff7d00;
+        }
+        .blog-hero {
+            background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)), url('blog-hero.jpg') no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+        }
+        .blog-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .blog-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .badge-tag {
+            background-color: var(--primary);
+        }
+        .sidebar-card {
+            border: none;
+            border-radius: 10px;
+        }
+        .sidebar-title {
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+        }
+        .search-box .form-control {
+            border-right: 0;
+        }
+        .search-box .btn {
+            border-left: 0;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="K-Eleventh Global" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="appointment.html">Book Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="blog-hero d-flex align-items-center">
+        <div class="container text-white text-center">
+            <h1 class="display-3 fw-bold mb-4">K-Eleventh Blog</h1>
+            <p class="lead">Expert insights on automotive maintenance and industry trends</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="row g-4">
+                        <!-- Featured Post -->
+                        <div class="col-12">
+                            <div class="card blog-card h-100">
+                                <img src="blog-featured.jpg" class="card-img-top" alt="Featured Post">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <span class="badge bg-primary bg-opacity-10 text-primary">FEATURED</span>
+                                        <small class="text-muted">October 15, 2023</small>
+                                    </div>
+                                    <h2 class="card-title">The Future of Electric Vehicle Maintenance</h2>
+                                    <p class="card-text">As electric vehicles become more prevalent, maintenance requirements are changing dramatically. Our technical director explores what EV owners need to know about maintaining their vehicles for optimal performance and longevity.</p>
+                                    <a href="blog-single.html" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                                <div class="card-footer bg-transparent">
+                                    <div class="d-flex align-items-center">
+                                        <img src="author1.jpg" alt="Author" class="rounded-circle me-2" width="30">
+                                        <small class="text-muted">By Emeka Okonkwo</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Regular Posts -->
+                        <div class="col-md-6">
+                            <div class="card blog-card h-100">
+                                <img src="blog1.jpg" class="card-img-top" alt="Blog Post">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <span class="badge badge-tag me-2">Maintenance</span>
+                                        <small class="text-muted">October 5, 2023</small>
+                                    </div>
+                                    <h3 class="card-title h5">5 Essential Winter Car Care Tips</h3>
+                                    <p class="card-text">Prepare your vehicle for colder months with these expert-recommended maintenance tips to ensure reliability and safety throughout winter.</p>
+                                    <a href="blog-single.html" class="btn btn-link ps-0">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card blog-card h-100">
+                                <img src="blog2.jpg" class="card-img-top" alt="Blog Post">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <span class="badge badge-tag me-2">Technology</span>
+                                        <small class="text-muted">September 28, 2023</small>
+                                    </div>
+                                    <h3 class="card-title h5">How AI is Transforming Auto Diagnostics</h3>
+                                    <p class="card-text">Discover how artificial intelligence is revolutionizing vehicle diagnostics, enabling faster and more accurate identification of mechanical issues.</p>
+                                    <a href="blog-single.html" class="btn btn-link ps-0">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card blog-card h-100">
+                                <img src="blog3.jpg" class="card-img-top" alt="Blog Post">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <span class="badge badge-tag me-2">Safety</span>
+                                        <small class="text-muted">September 15, 2023</small>
+                                    </div>
+                                    <h3 class="card-title h5">The Complete Guide to Brake Maintenance</h3>
+                                    <p class="card-text">Learn about the critical components of your braking system and how proper maintenance can prevent costly repairs and ensure your safety.</p>
+                                    <a href="blog-single.html" class="btn btn-link ps-0">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card blog-card h-100">
+                                <img src="blog4.jpg" class="card-img-top" alt="Blog Post">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <span class="badge badge-tag me-2">Industry</span>
+                                        <small class="text-muted">September 2, 2023</small>
+                                    </div>
+                                    <h3 class="card-title h5">Global Trends in Automotive Service</h3>
+                                    <p class="card-text">Our analysis of emerging trends in the international automotive service industry and how they're shaping the future of vehicle maintenance.</p>
+                                    <a href="blog-single.html" class="btn btn-link ps-0">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Search -->
+                    <div class="card sidebar-card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 sidebar-title mb-4">Search Blog</h3>
+                            <div class="input-group search-box">
+                                <input type="text" class="form-control" placeholder="Search articles...">
+                                <button class="btn" type="button"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="card sidebar-card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 sidebar-title mb-4">Categories</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-decoration-none">Maintenance Tips (12)</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none">Technology (8)</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none">Safety (6)</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none">Industry News (10)</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none">Company Updates (5)</a></li>
+                                <li><a href="#" class="text-decoration-none">Customer Stories (3)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="card sidebar-card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 sidebar-title mb-4">Popular Posts</h3>
+                            <div class="mb-3">
+                                <a href="#" class="text-decoration-none">How Often Should You Change Your Oil?</a>
+                                <small class="d-block text-muted">August 20, 2023</small>
+                            </div>
+                            <div class="mb-3">
+                                <a href="#" class="text-decoration-none">Signs Your Transmission Needs Service</a>
+                                <small class="d-block text-muted">July 15, 2023</small>
+                            </div>
+                            <div class="mb-3">
+                                <a href="#" class="text-decoration-none">The Truth About Fuel Additives</a>
+                                <small class="d-block text-muted">June 28, 2023</small>
+                            </div>
+                            <div>
+                                <a href="#" class="text-decoration-none">Preparing Your Car for Long Trips</a>
+                                <small class="d-block text-muted">June 10, 2023</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="card sidebar-card">
+                        <div class="card-body">
+                            <h3 class="h5 sidebar-title mb-4">Subscribe to Newsletter</h3>
+                            <p class="small">Get the latest automotive tips and company news delivered to your inbox.</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Need Professional Auto Service?</h2>
+            <p class="lead mb-5">Our certified technicians are ready to help with all your vehicle needs</p>
+            <a href="appointment.html" class="btn btn-light btn-lg px-4 me-2">Book Appointment</a>
+            <a href="services.html" class="btn btn-outline-light btn-lg px-4">Our Services</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="logo-white.png" alt="K-Eleventh Global" height="50" class="mb-3">
+                    <p>K-Eleventh Global Limited delivers international standard automotive maintenance and repair services across Africa and beyond.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></
